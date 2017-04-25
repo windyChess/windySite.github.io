@@ -4,13 +4,13 @@ var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 var allBall = [];
 window.onload = function(){
-	console.log(document.body.clientWidth+' !!! '+document.body.clientHeight);
+	console.log(window.screen.availWidth+' !!! '+window.screen.availHeight);
 	var _w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 	var _h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-	console.log(window.innerWidth +' === '+window.innerHeight);
+	console.log(document.body.clientWidth +' === '+document.body.clientHeight);
 	console.log(_w+' ???? '+_h);
-	canvas.width = _w;
-	canvas.height = _h;
+	canvas.width = _w - 5;
+	canvas.height = _h - 5;
 
 	//绘制20个小球存放在allBall中
 	for(var i=0; i<20;i++){
@@ -42,7 +42,7 @@ function Globe(ctx,radius,x,y,speedX,speedY){
 	this.y = y;
 	this.speedX = speedX;
 	this.speedY = speedY;
-	this.color = 'rgba(0,0,0,0.15)';
+	this.color = '#dddddd';
 }
 
 //绘制圆

@@ -1,9 +1,20 @@
 html,body{
 	margin:0;
 }
+body{
+	background-color: #f7fafc;
+}
 
-h1{
+/* 导航 */
+#navigator{
+	border:1px solid red;
+	width:500px;
+	height:250px;
+	background-color:pink;
+	margin:auto;
 	position: absolute;
-	left: 0px;
-	top: 0px;
+	left:50%;
+	top:50%;
+	margin-top:-125px;
+	margin-left:-250px;
 }
