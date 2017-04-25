@@ -4,9 +4,11 @@ var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 var allBall = [];
 window.onload = function(){
+	console.log(document.body.clientWidth+' !!! '+document.body.clientHeight);
 	var _w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 	var _h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-	
+	console.log(window.innerWidth +' === '+window.innerHeight);
+	console.log(_w+' ???? '+_h);
 	canvas.width = _w;
 	canvas.height = _h;
 
