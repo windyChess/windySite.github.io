@@ -5,16 +5,56 @@ body{
 	background-color: #f7fafc;
 }
 
-/* 导航 */
+/*start*************导航***************** */
 #navigator{
-	border:1px solid red;
-	width:500px;
-	height:250px;
-	background-color:pink;
+	border:4px dashed #ccc;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px #aaa;
+	width:0px;
+	height:0px;
+	background-color:#000;
 	margin:auto;
 	position: absolute;
 	left:50%;
 	top:50%;
 	margin-top:-125px;
 	margin-left:-250px;
+	color:#fff;
+	opacity: 0;
+	transition: opacity 2s,transform 2s,width 2s,height 2s;
+	-webkit-transition:opacity 2s,transform 2s,width 2s,height 2s;
 }
+#navigator>h2{
+	text-align: center;
+}
+/*end*************导航***************** */
+
+
+/* start**********菜单************* */
+#btn-tab{
+	position:absolute;
+	right:20px;
+	top:20px;
+	border:1px solid red;
+	padding:10px;
+}
+
+#btn-tab>a{
+	display: block;
+	padding:20px 30px;
+	border:1px solid red;
+	color:#fff;
+	font-weight: bold;
+	background-color:#fe4365;
+	border-radius: 50%;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 0px 3px 5px #888;
+	// transition: padding 1s;
+	// -webkit-transition: padding 1s;
+}
+
+/* #nav-tabs>a:hover{
+	padding:25px 35px;
+} */
+/* end**********菜单************* */
